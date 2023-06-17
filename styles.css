@@ -1,0 +1,168 @@
+
+body {
+    /* body color changed */
+    color: #40514E;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+
+} 
+/* only the top container is colored like this rest are made default */
+/* div {
+    background-color: #E4F9F5;
+
+} */
+.intro{
+    width: 30%;
+    /* after changing width need to change margin to make it at center */
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 5.625rem;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    /* color: #66BFBF; */
+    font-family: 'Sacramento', cursive;
+}
+h2{
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #66BFBF;
+    font-weight: normal;
+    /* bottom is padded  */
+    padding-bottom: 10px;
+    
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+p{
+    line-height: 2;
+}
+
+hr{
+    /* changed the horizontal line properties */
+    border: dotted #EAF6F6 6px;
+    /* by this we will get 2 hr lines one above one */
+    /* to change that we are going to make the bottom none */
+    border-bottom: none;
+    /* and width is changed too */
+    width: 4%;
+    /* more space between top and bottom */
+    margin: 100px auto;
+}
+
+.top-container {
+    /* top container color is added and from others removed */
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 100px;
+
+}
+
+.middle-container {
+    /* made spaces between top and bottom container by adding 100px margin */
+  margin: 100px 0;
+}
+
+.bottom-container {
+    /* bottom container also changed */
+    background-color: #66BFBF;
+    /* there is a gapbetween the the bottom container and the edge of the screen this is because of the fdefault margin of the copyright message paragraph about 16px. to avoid that we can add padding in our footer */
+    padding: 50px 0 20px;
+    /* as 20>16 so no gap will be there as the 16px can be placed in the footers 20px */
+}
+
+span {
+    text-decoration: underline;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 30px;
+    right: 300px;
+}
+
+
+.bottom-cloud {
+    position: absolute;
+    bottom: 300px;
+    left: 250px;
+}
+
+a{
+    /* anchor tag color and font changed */
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    /* we have to give margin so they will not be too close */
+    margin: 10px 20px;
+    /* by default all the anchor tags are underlined to change that we have to change text decoration to none */
+    text-decoration: none;
+
+}
+a:hover{
+    /* when the link is hovered we change the color to #EAF6F6 */
+    color: #EAF6F6;
+}
+
+.copyright{
+    /* copyright text color ,padding changed */
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+.skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+   
+    text-align: left;
+    /* instead of giving line height only here we can give it in the all paragraphs increase readability */
+    /* line-height: 2; */
+
+}
+.skill-1{
+    width:25%;
+    float: left;
+    margin-right: 30px;
+
+}
+.skill-2{
+    width:25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.contact-message{
+    width: 40%;
+    /* after changing width need to change margin to make it at center */
+    margin: 40px auto 30px;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4,  #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4,  #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4,  #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4,  #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4,  #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
